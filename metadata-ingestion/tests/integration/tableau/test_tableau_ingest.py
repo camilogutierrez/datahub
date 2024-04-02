@@ -372,7 +372,7 @@ def test_project_pattern(pytestconfig, tmp_path, mock_datahub_graph):
         output_file_name,
         mock_datahub_graph,
         pipeline_config=new_config,
-        pipeline_name="test_project_pattern",
+        pipeline_name="test_tableau_ingest",
     )
 
 

@@ -636,6 +636,7 @@ def test_tableau_stateful(pytestconfig, tmp_path, mock_time, mock_datahub_graph)
         golden_file_name,
         output_file_name,
         mock_datahub_graph,
+        pipeline_name="test_tableau_ingest",
     )
 
     checkpoint1 = get_current_checkpoint_from_pipeline(pipeline_run1)
@@ -649,6 +650,7 @@ def test_tableau_stateful(pytestconfig, tmp_path, mock_time, mock_datahub_graph)
         golden_file_deleted_name,
         output_file_deleted_name,
         mock_datahub_graph,
+        pipeline_name="test_tableau_ingest",
     )
     checkpoint2 = get_current_checkpoint_from_pipeline(pipeline_run2)
 
